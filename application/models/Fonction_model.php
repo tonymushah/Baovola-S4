@@ -49,13 +49,14 @@ class Fonction_model extends CI_Model {
 	}
 	
 	public function getAllProduits() {
-		$sql = "SELECT a.idarticle, a.titre, a.description, a.prix_unitaire, a.quantite, a.DateAjout, p.nom, p.numero_tel
-				FROM article AS a
-				JOIN personne AS p ON a.idproprietaire = p.idPersonne";
-		$query = $this->db->query($sql);
-		$result = $query->result(); 
-	
-		return $result;
+		$query = $this->db->get("detailarticle");
+		return $query->result();
+		// $sql = "SELECT a.idarticle, a.titre, a.description, a.prix_unitaire, a.quantite, a.DateAjout, p.nom, p.numero_tel
+		// 		FROM article AS a
+		// 		JOIN personne AS p ON a.idproprietaire = p.idPersonne";
+		// $query = $this->db->query($sql);
+		// $result = $query->result(); 
+		// return $result;
 	}
 	
 	public function getAllProduitsByCategorie($idcategorie) {
@@ -89,6 +90,21 @@ class Fonction_model extends CI_Model {
 	
 		return $result;
 	}
+
+	public function rechercheMultiCategorieTableau($categories) {
+		$categorieListe = implode(",", $categories);
+		
+		$sql = "SELECT da.*
+				FROM detailarticle AS da
+				JOIN articlecategorie AS ac ON da.idarticle = ac.idarticle
+				WHERE ac.idcategorie IN (".$categorieListe.")";
+		$query = $this->db->query($sql);
+		$result = $query->result(); 
+	
+		return $result;
+	}
+	//pour tester: $categories = [1, 2, 3]; $resultats = rechercheMultiCategorie($categories);
+ 
 	
 	// $condition = array('email' => ?, 'password' => ?)
 	public function auth($condition) {
