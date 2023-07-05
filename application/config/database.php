@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'postgres',
-	'password' => 'postgresql',
-	'database' => 'codeigniter',
+	'hostname' => '127.0.0.1',
+	'username' => 'e_commerce_service',
+	'password' => 'etu001844',
+	'database' => 'e_commerce_database',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
