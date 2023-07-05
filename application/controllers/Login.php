@@ -24,7 +24,7 @@ class Login extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
-    $this->load->model('client_model', 'clientModel', true);
+    $this->load->model('fonction_model', 'clientModel', true);
     $this->errorMessage = array (
     "required" => 'Veuillez remplir le champ %s.'
 		);

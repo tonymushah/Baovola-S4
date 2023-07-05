@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="background-color: green;">
+            <div class="head"> 
+            <div class="col-md-2">
+                <p>Accueil</p>
+            </div>
+            <div class="col-md-2">
+                <p>Cours HTML</p>
+            </div>
+            <div class="col-md-2">
+                <p>Cours CSS</p>
+            </div>
+            <div class="col-md-2">
+                <p>Cours PHP</p>
+            </div>
+            <div class="col-md-2">
+                <p>Cours Javascript</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="row" >
+            <div class="col-md-4">
+                <div class="intro" style="background-color: rgb(246, 247, 247); border-radius: 20px">
+                   <div id="prixMarqueQualite">
+                    <div class="prix">
+                        <h4>Prix</h4>
+                        <p>100$-200$<input type="checkbox" name=""></p>
+                        <p>200$-300$<input type="checkbox" name=""></p>
+                        <p>300$-400$<input type="checkbox" name=""></p>
+                        <p>400$-500$<input type="checkbox" name=""></p>
+                        <p>500$-600$<input type="checkbox" name=""></p>
+                    </div>
+                    
+                    <div class="marque">
+                        <h4>Marque </h4>
+                        <p>Xiaomi <input type="checkbox" name=""></p>
+                        <p>Apple <input type="checkbox" name=""></p>
+                        <p>HP <input type="checkbox" name=""></p>
+                        <p>Toshiba <input type="checkbox" name=""></p>
+                        <p>Asus <input type="checkbox" name=""></p>
+                    </div>
+
+                    <div class="qualite">
+                        <h4>Qualité du produit </h4>
+                        <p>Neuf <input type="checkbox" name=""></p>
+                        <p>Occasion <input type="checkbox" name=""></p>
+                        <p>Reconditionné <input type="checkbox" name=""></p>
+                    </div>
+                    
+                   </div>
+                </div>            
+            </div>
+
+            <div class="col-md-8" >
+                <div class="droite">
+                    <div class="row" id="rouge" style=" height: 50px;margin-top: 20px;"  >
+                        <div class="recherche">
+                            Trié par:
+                                <select name="" id="default">
+                                    <option value="">default</option>
+                                    <option value="">marque</option>
+                                    <option value="">processeur</option>
+                                    <option value="">prix</option>
+                                </select>
+                                
+                            
+                        </div>
+                    </div>
+                <div class="row" id="rouge"  >
+                    <div class="partie1" style="background-color: rgb(246, 247, 247);border-radius: 20px">
+                        <div id="sary"><img src="photo/o1.jpg" alt="" style="width: 200px; height: 200px;margin-top: 25px;border-radius: 10px;"></div> 
+                    
+                    <div id="description1">
+                        <h4>MICROSOFT Surface Pro 12.5"-128Go-Core i5-8Go de Ram</h4>
+                        <h5 style="font-style: italic;">windows 10pro</h5>
+                        <h5 style="color: #18ca18;">En stock-Neuf</h5>
+    
+                        <div id="descri1">
+                            <p>-Ram: 8Go</p>
+                            <p>-Resolution: 2736x1824</p>
+                            <p>-Stockage principal:128Go SSD</p>
+                            <p>-Rsolution: 2736x1824</p>
+                            <p>-Fonctions: PixelSense</p>
+                        </div>
+                    </div>
+                        <div class="prixbouton1">
+                            <h4> 599$</h4>
+                            <input  type="submit" value="Ajouter au panier" 
+                            style="    background-color: rgb(5, 156, 5);
+                            width: 200px;
+                            height: 40px;
+                            border-radius: 10px;
+                            border: none;
+                            color: white;
+                            margin-top: 15px;
+                            margin-right: 30px;"> 
+                        </div>
+                </div>
+                </div>
+                <div class="row" id="jaune" >
+                    <div class="partie2" style="background-color: rgb(246, 247, 247);border-radius: 20px">
+                        <div id="sary"><img src="photo/o2.jpg" alt="" style="width: 200px; height: 200px;margin-top: 25px;border-radius: 10px;"></div>
+                        <div id="description2">
+                            <h4>MICROSOFT Surface Pro 12.5"-128Go-Core i5-8Go de Ram</h4>
+                            <h5 style="font-style: italic;">windows 10pro</h5>
+                            <h5 style="color: #18ca18;">En stock-Neuf</h5>
+        
+                            <div id="descri2">
+                                <p>-Ram: 16Go</p>
+                                <p>-Resolution: 2736x1824</p>
+                                <p>-Stockage principal:512Go SSD</p>
+                                <p>-Rsolution: 2736x1824</p>
+                                <p>-Fonctions: Rétroéclairé Clavier</p>
+                            </div>
+                        </div>
+                        <div class="prixbouton1">
+                            <h4> 599$</h4>
+                            <a href="#"><input  type="submit" value="Ajouter au panier" 
+                            style="    background-color: rgb(5, 156, 5);
+                            width: 200px;
+                            height: 40px;
+                            border-radius: 10px;
+                            border: none;
+                            color: white;
+                            margin-top: 30px;
+                            margin-right: 30px;"> </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <script src="js/jquery/js"></script>
+    <script src="js.bootstrap.min.js"></script>
+</body>
+</html>
