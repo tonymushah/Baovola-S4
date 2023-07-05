@@ -25,7 +25,7 @@ class Inscription extends CI_Controller
   public function __construct()
   {
     parent::__construct();
-		$this->load->model('Client_model', 'clientModel', true);
+		$this->load->model('Fonction_model', 'clientModel', true);
     $this->errorMessage = array (
       "required" => 'Vous devez remplir le champ %s.',
       "min_length" => 'Le %s doit contenir au moins %s caractères.'
