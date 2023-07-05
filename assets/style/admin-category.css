@@ -1,0 +1,44 @@
+.liste {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5rem;
+}
+
+.tools {
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.link {
+	background: var(--theme);
+    padding: 1em 2em;
+	border-radius: 6px;
+}
+
+
+
+.card{
+	width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.options {
+    margin: 2em 1em;
+}
+
+.btnLink {
+    background-color: var(--theme);
+    width: 15rem;
+    height: 4rem;
+}

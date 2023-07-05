@@ -1,0 +1,14 @@
+.container {
+    margin-top: 2%;
+}
+
+.btnLink {
+    display: flex;
+    background: var(--theme);
+    width: 10rem;
+    height: 3rem;
+    /* text-align: center; */
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}

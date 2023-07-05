@@ -1,0 +1,14 @@
+QUAND L'HEBERGEUR EST CONFIGURE
+config base_url : OK
+    push
+config db for the production
+
+
+SELON SUJET
+    config default controller
+    sessionController
+
+ATAO PRET
+    html et css form
+    gestion erreur db am codeigniter
+    ilay idée de nav
